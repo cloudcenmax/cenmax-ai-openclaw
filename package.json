@@ -1,0 +1,37 @@
+{
+  "name": "@cenmax-ai/openclaw",
+  "version": "0.1.0",
+  "description": "Sign in to Cenmax AI from OpenClaw using your account allowance.",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "index.mjs",
+    "src/",
+    "openclaw.plugin.json",
+    "README.md",
+    "QUALIFICATION.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=24.16.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.mjs"
+    ],
+    "providers": [
+      "cenmax"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudcenmax/cenmax-ai-openclaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cloudcenmax/cenmax-ai-openclaw/issues"
+  },
+  "homepage": "https://github.com/cloudcenmax/cenmax-ai-openclaw#readme"
+}

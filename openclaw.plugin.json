@@ -1,0 +1,9 @@
+{
+  "id": "cenmax-ai",
+  "name": "Cenmax AI",
+  "description": "Cenmax AI subscription sign-in and entitled model discovery.",
+  "providers": ["cenmax"],
+  "modelCatalog": { "discovery": { "cenmax": "refreshable" } },
+  "providerAuthChoices": [{ "provider": "cenmax", "method": "device", "choiceId": "cenmax-oauth", "choiceLabel": "Sign in with Cenmax AI", "groupId": "cenmax", "groupLabel": "Cenmax AI", "appGuidedAuth": "device-code" }],
+  "configSchema": { "type": "object", "properties": {}, "additionalProperties": false }
+}
