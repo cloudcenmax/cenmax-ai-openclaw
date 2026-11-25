@@ -12,14 +12,15 @@ Cenmax AI must register the public OAuth client `cenmax-openclaw` with device-co
 
 ## Install and connect
 
-From this directory:
+The public npm package is `@cenmax/openclaw`. With the supported OpenClaw host installed:
 
 ```sh
-npm test
-npm pack
-openclaw plugins install --force --accept-capabilities ./cenmax-ai-openclaw-0.1.0.tgz
+npm pack @cenmax/openclaw@0.1.1
+openclaw plugins install --force --accept-capabilities ./cenmax-openclaw-0.1.1.tgz
 openclaw models auth login --provider cenmax --method device
 ```
+
+From a source checkout, run `npm test` and `npm pack`, then install the resulting `cenmax-openclaw-0.1.1.tgz` archive with the same OpenClaw command. Version 0.1.1 updates the npm package scope; the qualified runtime is unchanged.
 
 Follow the displayed Cenmax AI approval link and confirm the matching code. Choose your personal or company account on the approval page. OpenClaw manages OAuth credentials in its auth-profile store and renews them through the provider refresh hook. Protect that store as you would any account credential. Do not copy rotating refresh tokens across machines or agents.
 

@@ -1,6 +1,6 @@
 {
-  "name": "@cenmax-ai/openclaw",
-  "version": "0.1.0",
+  "name": "@cenmax/openclaw",
+  "version": "0.1.1",
   "description": "Sign in to Cenmax AI from OpenClaw using your account allowance.",
   "type": "module",
   "license": "MIT",
@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/cloudcenmax/cenmax-ai-openclaw/issues"
   },
-  "homepage": "https://github.com/cloudcenmax/cenmax-ai-openclaw#readme"
+  "homepage": "https://github.com/cloudcenmax/cenmax-ai-openclaw#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
